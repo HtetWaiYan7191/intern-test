@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --text-primary-color: #4F4F4F;
+    --text-secondary-color: #000000;
+    --text-title-color:#18181B;
+    --text-normal: #0F172A;
+    --text-white: #F9FAFB;
+    --text-footer: #0D0D0D;
+}
+
+/* style for mobile  */
+
+/* style for desktop  */
+@media screen and (min-width: 768px) {
+    
+}
