@@ -85,11 +85,11 @@ html {
   }
 
   .question-box-header {
-    @apply flex items-center justify-between mb-4;
+    @apply flex items-center justify-between mb-4 md:pt-6;
   }
 
   .footer-text {
-    @apply font-mulish font-[700] text-[22px];
+    @apply font-mulish font-[700] text-[22px] mb-2 md:mb-3;
   }
 
   .contact-container p {

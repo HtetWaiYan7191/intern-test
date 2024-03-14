@@ -628,10 +628,23 @@ video {
   justify-content: space-between;
 }
 
+@media (min-width: 768px){
+  .question-box-header{
+    padding-top: 1.5rem;
+  }
+}
+
 .footer-text{
+  margin-bottom: 0.5rem;
   font-size: 22px;
   font-weight: 700;
   font-family: "Mulish", sans-serif;
+}
+
+@media (min-width: 768px){
+  .footer-text{
+    margin-bottom: 0.75rem;
+  }
 }
 
 .contact-container p{
@@ -978,9 +991,9 @@ video {
   padding: 0.75rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-4{
@@ -1011,26 +1024,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-6{
@@ -1391,8 +1384,20 @@ html {
     margin-bottom: 5rem;
   }
 
+  .md\:me-8{
+    margin-inline-end: 2rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:mt-16{
     margin-top: 4rem;
+  }
+
+  .md\:mt-4{
+    margin-top: 1rem;
   }
 
   .md\:mt-8{
@@ -1435,6 +1440,18 @@ html {
     width: 864px;
   }
 
+  .md\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:max-w-\[524px\]{
+    max-width: 524px;
+  }
+
   .md\:max-w-\[693\.9px\]{
     max-width: 693.9px;
   }
@@ -1443,16 +1460,20 @@ html {
     max-width: 799.28px;
   }
 
-  .md\:max-w-\[523\.89px\]{
-    max-width: 523.89px;
-  }
-
-  .md\:max-w-\[524px\]{
-    max-width: 524px;
+  .md\:flex-1{
+    flex: 1 1 0%;
   }
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .md\:flex-col{
@@ -1471,9 +1492,27 @@ html {
     justify-content: center;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .md\:gap-x-1{
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
+  }
+
   .md\:gap-x-10{
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
+  }
+
+  .md\:gap-x-16{
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 
   .md\:gap-x-4{
@@ -1491,8 +1530,39 @@ html {
          column-gap: 2rem;
   }
 
+  .md\:border-b-0{
+    border-bottom-width: 0px;
+  }
+
+  .md\:border-none{
+    border-style: none;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-\[16px\]{
     font-size: 16px;
+  }
+
+  .md\:text-\[25px\]{
+    font-size: 25px;
+  }
+
+  .md\:text-\[28px\]{
+    font-size: 28px;
   }
 
   .md\:text-\[40px\]{
@@ -1501,14 +1571,6 @@ html {
 
   .md\:text-\[58px\]{
     font-size: 58px;
-  }
-
-  .md\:text-\[28px\]{
-    font-size: 28px;
-  }
-
-  .md\:text-\[25px\]{
-    font-size: 25px;
   }
 
   .md\:font-\[800\]{
@@ -1525,9 +1587,5 @@ html {
 
   .md\:leading-\[69\.6px\]{
     line-height: 69.6px;
-  }
-
-  .md\:text-\[28\]{
-    color: 28;
   }
 }
