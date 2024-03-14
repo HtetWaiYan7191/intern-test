@@ -154,7 +154,24 @@ html {
       #ebff71
     );
 }
-
+.text-gradient:before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  transform: translate(2px, 5px);
+  z-index: 30;
+  width: 100%;
+  filter: blur(25px);
+  background-image:
+    linear-gradient(
+      to right,
+      #44ff9a,
+      #44b0ff,
+      #8b44ff,
+      #f64,
+      #ebff71
+    );
+}
 .border-box::before {
   content: "";
   position: absolute;
