@@ -6,6 +6,10 @@
       }
     },
     "extends": ["development"],
+    "rules": {
+      "no-inline-style": "off",
+       "compat-api": "off",
+    },
     "formatters": ["stylish"],
     "hints": [
       "button-type",

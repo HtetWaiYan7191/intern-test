@@ -1038,12 +1038,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.ps-10{
-  padding-inline-start: 2.5rem;
-}
-
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.ps-10{
+  padding-inline-start: 2.5rem;
 }
 
 .text-center{
@@ -1444,10 +1444,6 @@ html {
     margin-top: 2rem;
   }
 
-  .md\:block{
-    display: block;
-  }
-
   .md\:flex{
     display: flex;
   }
@@ -1514,10 +1510,6 @@ html {
 
   .md\:flex-1{
     flex: 1 1 0%;
-  }
-
-  .md\:flex-none{
-    flex: none;
   }
 
   .md\:grid-cols-3{
@@ -1612,11 +1604,6 @@ html {
   .md\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .md\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .md\:pt-16{
