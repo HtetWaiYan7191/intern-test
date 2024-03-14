@@ -39,7 +39,23 @@
 /* style for mobile  */
 @layer components {
     .install-container, .primary-btn {
-        @apply flex items-center gap-x-2 bg-btn-black px-4 py-2 rounded-md font-mulish;
+        @apply flex items-center px-4 py-2 rounded-md gap-x-2 bg-btn-black font-mulish;
+    }
+
+    .section-layout-style {
+       @apply relative flex flex-col items-center pt-6
+    }
+
+    .title-text-default {
+        @apply font-jakarta text-title font-[800] text-center leading-[44px]
+    }
+
+    .feature-title {
+        @apply font-opensans font-[600] text-[18px] text-[#363636]
+    }
+
+    .feature-paragraph {
+        @apply font-opensans font-[400] text-[14px] text-gray/55
     }
 }
 
@@ -57,6 +73,18 @@
     border: solid 10px transparent !important;
     border-radius: 1rem ;
 }
+
+.card-gradient-shadow::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    transform: translate(-1px, 14px);
+    z-index: -1;
+    filter: blur(20px);
+    background: conic-gradient(from 195deg at 53% 5%, #44FF9A, #44B0FF, #8B44FF, #FF6644, #EBFF71);
+}
+
+
 
 .border-box::before {
     content: '';
