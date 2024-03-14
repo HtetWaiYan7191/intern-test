@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizardshot</title>
+    <link href="./output.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="flex justify-center py-8">
+      <nav class="flex justify-between items-center w-[80%]">
+        <div class="flex items-center logo-container gap-x-2">
+          <img src="./assets/logo.png" alt="wizardshot-logo" />
+          <h2 class="font-bold text-primary-navy font-jakarta">Wizardshot</h2>
+        </div>
+
+        <div class="mobile-menu-icon md:hidden">
+          <img
+            src="./assets/menu_icon.png"
+            alt="mobile-menu-icon"
+            id="menu-icon"
+          />
+        </div>
+        <div
+          id="mobile-menu-list"
+          class="w-[100%] hidden left-0 bottom-0 h-[100vh] fixed bg-white z-20"
+        >
+          <div class="border-b border-b-stone-300">
+            <div class="flex justify-between items-center w-[80%] mx-auto py-8">
+              <div class="flex items-center logo-container gap-x-2">
+                <img src="./assets/logo.png" alt="wizardshot-logo" />
+                <h2 class="font-bold text-primary-navy font-jakarta">
+                  Wizardshot
+                </h2>
+              </div>
+
+              <div class="mobile-menu-icon md:hidden">
+                <img
+                  src="./assets/x-close.png"
+                  alt="close-logo"
+                  id="close-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <ul
+            class="flex flex-col py-10 border-b ps-10 gap-y-6 mobile-menu-navbar-list border-b-stone-300"
+          >
+            <li>
+              <a href="" class="text-[#4F4F4F] underline font-semibold">Home</a>
+            </li>
+            <li><a href="#" class="text-gray/60">Features</a></li>
+            <li><a href="#" class="text-gray/60">About</a></li>
+            <li>
+              <a href="#" class="text-gray/60">Help Center & Community</a>
+            </li>
+            <li><a href="#" class="text-gray/60">Login</a></li>
+          </ul>
+          <div class="flex flex-col items-center mt-6 gap-y-2">
+            <button class="relative primary-btn">
+              <img src="./assets/chrome_logo.png" alt="chrome-icon" />
+              <p class="font-semibold text-white">Install Wizardshot</p>
+            </button>
+            <p class="free-tutorial-text">100% free, forever 🤑</p>
+          </div>
+        </div>
+        <ul
+          class="navbar-list-container md:flex *:font-opensans *:text-[16px] md:items-center md:gap-x-6 hidden"
+        >
+          <li><a href="" class="text-[#4F4F4F] font-semibold">Home</a></li>
+          <li><a href="#" class="text-gray/60">Features</a></li>
+          <li><a href="#" class="text-gray/60">About</a></li>
+          <li><a href="#" class="text-gray/60">Help Center & Community</a></li>
+        </ul>
+
+        <div
+          class="relative hidden login-container md:flex md:items-center md:gap-x-5"
+        >
+          <button class="text-[#666666] font-opensans">Login</button>
+          <button class="relative primary-btn">
+            <img src="./assets/chrome_logo.png" alt="chrome-icon" />
+            <p class="font-semibold text-white">Install Wizardshot</p>
+            <p class="absolute right-0 -top-5 free-tutorial-text">
+              100% free, forever 🤑
+            </p>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section-layout-style main-section gap-y-4">
+      <h1
+        class="text-[40px] title-text-default md:text-[58px] md:max-w-[693.9px] md:leading-[69.6px]"
+      >
+        Your Magic Wand for Instant Documentation
+      </h1>
+      <p
+        class="uppercase font-opensans text-gray/60 text-[20px] md:text-[16px] leading-[28px] text-center font-[600]"
+      >
+        Turn ANY process into a simple step-by step Guide
+      </p>
+      <button class="text-white primary-btn">
+        <p>Install Wizardshot</p>
+        <img src="./assets/arrow-narrow-right.png" alt="arrow-right-icon" />
+      </button>
+      <figure
+        class="relative mx-4 mt-16 rounded-sm min-section-img-container border-box"
+      >
+        <img
+          src="./assets/main-section-img.png"
+          alt="main-section-img"
+          class="w-auto md:-w-[800.67px] md:h-[496.75px] object-cover"
+        />
+        <p
+          class="absolute -top-11 left-4 font-mulish italic w-[147.27px] leading-[14px] font-[700] text-[12px]"
+        >
+          it Only Takes 3 Clicks To Publish Your First Tutorial
+        </p>
+        <img
+          src="./assets/img-arrow.png"
+          alt="img-arrow"
+          class="absolute -left-[1rem] -top-9"
+        />
+      </figure>
+    </main>
+
+    <section class="mt-0 feature-section section-layout-style md:mt-16">
+      <h2
+        class="title-text-default text-[30px] md:text-[40px] md:leading-[48px] md:max-w-[799.28px]"
+      >
+        Say <span class="border-b-2">Goodbye To Writing Docs,</span> and Hello
+        To Wizardshot Doing it for YOU.
+      </h2>
+      <ul
+        class="flex flex-col items-center mt-8 gap-y-10 feature-card-container md:grid md:grid-cols-3 md:gap-x-10 md:items-start"
+      >
+        <li class="feature-card w-[300px]">
+          <figure class="relative feature-img-container card-gradient-shadow">
+            <img
+              src="./assets/category-card_1.png"
+              alt="capture-img"
+              class="md:w-[297px] md:h-[234px]"
+            />
+          </figure>
+          <div class="mt-10 feature-explain">
+            <h2 class="mb-2 feature-title">1. Click Capture</h2>
+            <p class="feature-paragraph">
+              Once you install the Chrome extension, fire it up, and click
+              “Capture”.
+            </p>
+          </div>
+        </li>
+
+        <li class="feature-card w-[300px]">
+          <figure
+            class="relative feature-img-container card-gradient-shadow md:mb-[5rem]"
+          >
+            <img
+              src="./assets/category-card_2.png"
+              alt="capture-img"
+              class="md:w-[296px]"
+            />
+          </figure>
+          <div class="mt-10 feature-explain">
+            <h2 class="mb-2 feature-title">2. Perform Your Actions</h2>
+            <p class="feature-paragraph">
+              Once capturing, Wizardshot carefully monitors what you do to
+              understand how to document it.
+            </p>
+          </div>
+        </li>
+
+        <li class="feature-card w-[300px]">
+          <figure class="relative feature-img-container card-gradient-shadow">
+            <img
+              src="./assets/category-card_3.png"
+              alt="capture-img"
+              class="md:w-[297px] md:h-[234px]"
+            />
+          </figure>
+          <div class="mt-10 feature-explain">
+            <h2 class="flex items-center mb-2 feature-title">
+              3.
+              <img
+                src="./assets/correct_mark.png"
+                alt="correct-mark-icon"
+                class="mx-1"
+              />
+              Done. Article Written
+            </h2>
+            <p class="feature-paragraph">
+              Wizardshot carefully crafts the perfect article based off your
+              actions recorded. Just click “Done” and we’ll write up the article
+              in a second.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="my-8 tutorial-title md:my-0">
+        <h2 class="title-text-default text-[28px]">+32 MORE FEATURES</h2>
+        <h3 class="title-text-default text-[18px]">
+          INCLUDING A KB INTEGRATION
+        </h3>
+      </div>
+    </section>
+
+    <section class="mt-0 tutorial-section md:my-16 section-layout-style">
+      <div
+        class="flex relative justify-center items-center tutorial-text gap-x-2 md:gap-x-8 *:font-jakarta"
+      >
+        <div class="bg-gradient"></div>
+        <div class="flex items-center gap-x-2">
+          <h3>Free</h3>
+          <div class="flex flex-col">
+            <span class="">Free</span>
+            <span class="">Forever</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-x-2">
+          <h3>Unlimited</h3>
+          <div class="flex flex-col">
+            <span class="">Tutorial</span>
+            <span class="">Creation</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-x-2">
+          <h3>Powerful</h3>
+          <div class="flex flex-col">
+            <span class="">Editor &</span>
+            <span class="">Integrations</span>
+          </div>
+        </div>
+
+        <figure class="absolute right-6 -bottom-[5rem]">
+          <img src="./assets/gradient_arrow.png" alt="gradient-arrow" />
+        </figure>
+      </div>
+
+      <div
+        class="p-3 mx-4 mt-10 border-[4px] rounded-md tutorial-detail md:w-[864px] md:h-[495px] md:flex md:flex-col md:justify-center"
+      >
+        <h2
+          class="title-text-default leading-[35.2px] p-[0.75rem] text-[32px] md:text-[40px] md:leading-[56px] md:max-w-[524px] md:mx-auto"
+        >
+          Create A Detailed Tutorial in Less than 3 clicks
+        </h2>
+        <div class="flex justify-center md:mt-8">
+          <button class="relative px-6 py-3 md:px-10 md:py-6 install-container">
+            <div class="card-gradient-shadow"></div>
+
+            <img
+              src="./assets/chrome_logo.png"
+              alt="chrome-icon"
+              class="w-[32px] h-[32px] object-cover"
+            />
+            <p class="font-semibold text-white text-[24px]">
+              Install Wizardshot
+            </p>
+          </button>
+        </div>
+
+        <div class="mt-8 detail-ending-text">
+          <p
+            class="text-center font-jakarta font-[600] text-[14px] md:text-[28px] md:font-[800]"
+          >
+            “Has Helped Us Write Help Docs 100x Faster”
+          </p>
+          <p class="text-center font-jakarta text-[14px] md:text-[25px]">
+            – Dany River, Cartier Informatie
+          </p>
+        </div>
+
+        <ul
+          class="flex items-center justify-center my-3 star-container gap-x-2"
+        >
+          <li><img src="./assets/star.png" alt="star-icon" /></li>
+          <li><img src="./assets/star.png" alt="star-icon" /></li>
+          <li><img src="./assets/star.png" alt="star-icon" /></li>
+          <li><img src="./assets/star.png" alt="star-icon" /></li>
+          <li><img src="./assets/star.png" alt="star-icon" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="common-question-section section-layout-style">
+      <h2 class="title-text-default font-[800] text-[32px] mb-6">
+        Common Questions
+      </h2>
+      <div class="w-full md:w-[70%] md:mx-auto question-container">
+        <div class="question-box">
+          <div class="question-box-header">
+            <h2 class="mb-2">What is Wizardshot?</h2>
+            <i class="cursor-pointer fas fa-chevron-up up-icons"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Wizardshot is a web app & chrome extension . that allows you to
+              create step-by-step tutorials simply by capturing your screen.
+            </p>
+          </div>
+        </div>
+
+        <div class="question-box">
+          <div class="question-box-header">
+            <h2 class="mb-2">How is Wizardshot Free?</h2>
+            <i class="cursor-pointer fas fa-chevron-up up-icons"></i>
+          </div>
+          <div class="flex flex-col items-center md:items-start gap-y-5 answer">
+            <p>
+              The costs to run a service is really inexpensive as most of the
+              processing happens in the Chrome extension.
+            </p>
+            <p>
+              Really - all that we have to pay for is
+              <span class="border-b"
+                >super-secure hosting, awesome 24/7 support </span
+              >and that’s it.
+            </p>
+            <p class="font-semibold">
+              We built Wizardshot as a stand-alone product with a deep
+              <span class="border-b">Helpjuice Knowledge Base </span
+              >integration.
+            </p>
+          </div>
+        </div>
+
+        <div class="question-box">
+          <div class="question-box-header">
+            <h2 class="mb-2">Is my data secure ?</h2>
+            <i class="cursor-pointer fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col gap-y-4 items-center my-6 learn-more-box md:flex md:flex-row md:justify-between md:w-[90%] md:mx-auto"
+        >
+          <h2 class="text-center font-mulish font-[700] text-[14px]">
+            Curious To Learn More?
+          </h2>
+          <button class="px-6 py-2 text-white rounded-md bg-[#03132E]">
+            Visit Help & Community Center
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-8 border-b-2">
+        <div
+          class="px-4 md:px-16 relative py-8 md:py-10 tutorial-create-box mx-4 bg-[#000000] md:w-[90%] md:mx-auto text-white"
+        >
+          <div class="md:flex md:items-center md:justify-between">
+            <div class="md:flex-1">
+              <h2 class="font-mulish font-[500] text-[24px]">
+                Create Tutorials in 3 Clicks.
+              </h2>
+              <p class="text-secondary/60 font-mulish text-[14px]">
+                With WizardShot, You Click Capture, And We’ll Capture What’s
+                Happening on Your Screen And Turn It Into A Tutorial.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-end mt-6 gap-x-4 md:gap-x-1 btn-container md:flex-1"
+            >
+              <div class="relative">
+                <button
+                  class="border-b border-b-white text-[20px] font-[500] font-inter relative"
+                >
+                  Try Wizards
+                </button>
+                <div class="text-gradient"></div>
+              </div>
+
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <span class="absolute -top-6 free-tutorial-text"
+            >100% free, forever 🤑</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mt-6 md:pt-16 md:py-10 section-layout-style md:flex-row md:items-start md:w-[90%] md:mx-auto md:flex-wrap md:justify-evenly"
+    >
+      <div class="flex flex-col gap-y-4">
+        <div class="flex items-center logo-container gap-x-2">
+          <img
+            src="./assets/logo.png"
+            alt="wizardshot-logo"
+            class="w-[32px] h-[32px]"
+          />
+          <h2
+            class="text-xl font-bold md:text-3xl text-primary-navy font-jakarta"
+          >
+            Wizardshot
+          </h2>
+        </div>
+        <h2 class="font-mulish font-[600] text-[18px] w-[276px]">
+          Turn complex process into a simple step-by step Guide
+        </h2>
+        <div class="flex flex-wrap border-[3px] year-box w-[190px]">
+          <div class="flex flex-col border-r-[3px] h-[60px] w-[50%] year">
+            <span class="text-[#3A3A3A] text-3xl font-extrabold text-center"
+              >12</span
+            >
+            <span class="text-[#3A3A3A] text-[14px] font-bold text-center"
+              >YEARS</span
+            >
+          </div>
+          <div
+            class="w-[50%] flex flex-col items-center h-[60px] built-by-box gap-y-1"
+          >
+            <span class="text-[10px] font-opensans font-bold text-center"
+              >BUILT BY</span
+            >
+            <figure class="relative">
+              <img
+                src="./assets/helpjuice_logo.png"
+                alt="help-juice-logo"
+                class="object-cover relative w-[20px] h-[20px]"
+              />
+              <img
+                src="./assets/logo-drop-water.png"
+                alt="logo-drop-water"
+                class="drop-water-center"
+              />
+            </figure>
+
+            <span class="text-[10px] font-opensans font-bold text-center"
+              >HELPJUICE</span
+            >
+          </div>
+          <p
+            class="flex-1 border-t-[3px] text-[10px] font-opensans text-center"
+          >
+            #1 Rated Knowledge Base Software
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between mt-8 md:gap-x-16 md:mt-0 learn-more-company"
+      >
+        <ul class="flex flex-col learn-more">
+          <h2 class="footer-text">Learn More</h2>
+          <li>Wizardshot</li>
+          <li>Community Page</li>
+          <li>Help Center</li>
+          <li>Security Information</li>
+        </ul>
+
+        <ul class="company">
+          <h2 class="footer-text">Company</h2>
+          <li>About Us</li>
+          <li>Status Page</li>
+        </ul>
+      </div>
+
+      <div class="md:flex md:flex-col md:mt-0">
+        <div class="hidden md:flex md:flex-col">
+          <p>📞 +1 (833) 387 3877</p>
+          <p>✉️ success@wizardshot.com</p>
+        </div>
+
+        <ul
+          class="flex items-center w-[80%] mt-6 md:mt-4 social-container gap-x-6"
+        >
+          <li>
+            <a href="">
+              <img src="./assets/tiktok.png" alt="tiktop" />
+            </a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/instagram.png" alt="instagram" /></a>
+          </li>
+        </ul>
+
+        <div
+          class="flex pb-6 mt-4 border-b gap-x-6 md:flex-row-reverse md:w-auto log-in-sign-up md:mt-8 md:me-8 border-b-stone-300 md:border-none"
+        >
+          <button type="button" class="footer-text">Log In</button>
+          <button type="button" class="footer-text">Sign Up</button>
+        </div>
+
+        <div class="mt-6 contact-container md:hidden">
+          <p>📞 +1 (833) 387 3877</p>
+          <p>✉️ success@wizardshot.com</p>
+
+          <h4 class="md:hidden">© 2024 Wizardshot – All rights reserved.</h4>
+        </div>
+      </div>
+
+      <div class="hidden md:flex md:order-last md:w-full md:justify-center">
+        <h4 class="pb-8">© 2024 Wizardshot – All rights reserved.</h4>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9e6b5903a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
