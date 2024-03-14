@@ -651,6 +651,15 @@ video {
   font-family: "Inter", sans-serif;
 }
 
+.free-tutorial-text{
+  right: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  font-family: "Alphabetized", sans-serif;
+}
+
 .absolute{
   position: absolute;
 }
@@ -667,6 +676,10 @@ video {
   top: -2.75rem;
 }
 
+.-top-6{
+  top: -1.5rem;
+}
+
 .-top-9{
   top: -2.25rem;
 }
@@ -675,28 +688,60 @@ video {
   left: 1rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .right-0{
   right: 0px;
 }
 
-.top-0{
-  top: 0px;
+.bottom-10{
+  bottom: 2.5rem;
 }
 
-.-top-10{
-  top: -2.5rem;
+.-bottom-10{
+  bottom: -2.5rem;
 }
 
-.-top-8{
-  top: -2rem;
+.right-10{
+  right: 2.5rem;
 }
 
-.-top-5{
-  top: -1.25rem;
+.right-5{
+  right: 1.25rem;
 }
 
-.-top-6{
-  top: -1.5rem;
+.-bottom-40{
+  bottom: -10rem;
+}
+
+.-bottom-32{
+  bottom: -8rem;
+}
+
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.-bottom-\[5\.2rem\]{
+  bottom: -5.2rem;
+}
+
+.-bottom-\[5rem\]{
+  bottom: -5rem;
+}
+
+.right-8{
+  right: 2rem;
+}
+
+.right-6{
+  right: 1.5rem;
 }
 
 .mx-1{
@@ -1011,10 +1056,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[16px\]{
-  font-size: 16px;
-}
-
 .font-\[500\]{
   font-weight: 500;
 }
@@ -1091,21 +1132,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-gray{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Alphabetized';
+
+  src: url(./assets/fonts/alphabetized\ cassette\ tapes.ttf) format('truetype');
 }
 
 .font-jakarta {
@@ -1118,6 +1159,10 @@ video {
 
 .font-inter {
   font-family: "Inter", sans-serif;
+}
+
+.font-alphabetized {
+  font-family: "Alphabetized", sans-serif;
 }
 
 .font-mulish {
