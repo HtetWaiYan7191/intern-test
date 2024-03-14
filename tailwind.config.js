@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       colors: {
         'footer-black': '#0D0D0D',
+        'gray': '#000000',
+        'btn-black': '#18181C',
         'purple-linear': '#AB96F8',
         'pink-linear': '#FF99D0',
+        'primary-navy': '#1E293B',
       }
     },
   },
