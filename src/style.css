@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +21,11 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.font-mulish {
+    font-family: "Mulish", sans-serif;
+
+}
+
 :root {
     --text-primary-color: #4F4F4F;
     --text-navy: #1E293B;
@@ -31,8 +37,37 @@
 }
 
 /* style for mobile  */
+@layer components {
+    .install-container, .primary-btn {
+        @apply flex items-center gap-x-2 bg-btn-black px-4 py-2 rounded-md font-mulish;
+    }
+}
 
-/* style for desktop  */
+/* .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-radius: 3rem;
+    border-image-source: linear-gradient(to right, #AB96F8 , #FF99D0 );
+} */
+
+.border-box {
+    position: relative;
+    background-clip: padding-box !important;
+    border: solid 10px transparent !important;
+    border-radius: 1rem ;
+}
+
+.border-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index:  -1;
+    margin: -10px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, #AB96F8 , #FF99D0 );
+}
+/* style for desktop  */ 
 @media screen and (min-width: 768px) {
     
 }

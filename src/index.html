@@ -9,9 +9,9 @@
 <body>
     <header class="flex justify-center py-6 ">
         <nav class="flex justify-between items-center w-[80%]">
-            <div class="logo-container flex items-center gap-x-2">
+            <div class="flex items-center logo-container gap-x-2">
                 <img src="./assets/logo.png" alt="wizardshot-logo">
-                <h2 class="text-primary-navy font-bold font-jakarta">Wizardshot</h2>
+                <h2 class="font-bold text-primary-navy font-jakarta">Wizardshot</h2>
             </div>
 
             <div class="mobile-menu-icon md:hidden">
@@ -25,14 +25,31 @@
                 <li><a href="#" class="text-gray/60">Help Center & Community</a></li>
             </ul>
 
-            <div class="login-container relative md:flex md:items-center md:gap-x-5 hidden">
+            <div class="relative hidden login-container md:flex md:items-center md:gap-x-5">
                 <button class="text-[#666666] font-opensans">Login</button>
-                <button class="install-container flex items-center gap-x-4 bg-btn-black px-4 py-2 rounded-md">
+                <button class="install-container">
                     <img src="./assets/🦆 icon _chrome_.png" alt="chrome-icon">
                     <p class="font-semibold text-white">Install Wizardshot</p>
                 </button>
             </div>
         </nav>
     </header>
+
+    <main class="relative flex flex-col items-center pt-6 main-section gap-y-4">
+        <h1 class="font-jakarta text-title font-[800] text-[40px] text-center leading-[44px]">Your Magic Wand for Instant Documentation</h1>
+        <p class="uppercase font-opensans text-gray/60 text-[20px] leading-[28px] text-center font-[600]">Turn ANY process into a simple step-by step Guide</p>
+        <button class="text-white primary-btn">
+            <p>Install Wizardshot</p>
+            <img src="./assets/arrow-narrow-right.png" alt="arrow-right-icon">
+        </button>
+        <figure class="relative mx-4 mt-16 rounded-sm min-section-img-container border-box">
+            <img src="./assets/main-section-img.png" alt="main-section-img">
+            <p class="absolute -top-11 left-4 font-mulish italic w-[147.27px] leading-[14px] font-[700] text-[12px]">
+                it Only Takes 3 Clicks To Publish Your First Tutorial
+            </p>
+            <img src="./assets/img-arrow.png" alt="img-arrow" class="absolute -left-[1rem] -top-9">
+        </figure>
+       
+    </main>
 </body>
 </html>
