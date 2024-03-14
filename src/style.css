@@ -154,7 +154,8 @@ html {
       #ebff71
     );
 }
-.text-gradient:before {
+
+.text-gradient::before {
   content: "";
   position: absolute;
   inset: 3px;
@@ -172,6 +173,7 @@ html {
       #ebff71
     );
 }
+
 .border-box::before {
   content: "";
   position: absolute;

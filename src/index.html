@@ -65,7 +65,7 @@
           </div>
         </div>
         <ul
-          class="navbar-list-container md:flex *:font-opensans *:text-[16px] md:items-center md:gap-x-4 hidden"
+          class="navbar-list-container md:flex *:font-opensans *:text-[16px] md:items-center md:gap-x-6 hidden"
         >
           <li><a href="" class="text-[#4F4F4F] font-semibold">Home</a></li>
           <li><a href="#" class="text-gray/60">Features</a></li>
@@ -383,7 +383,7 @@
     </section>
 
     <footer
-      class="mt-6 md:pt-16  md:py-10 section-layout-style md:flex-row md:items-start md:w-[90%] md:mx-auto md:justify-evenly"
+      class="mt-6 md:pt-16 md:py-10 section-layout-style md:flex-row md:items-start md:w-[90%] md:mx-auto md:flex-wrap md:justify-evenly"
     >
       <div class="flex flex-col gap-y-4">
         <div class="flex items-center logo-container gap-x-2">
@@ -481,8 +481,8 @@
         <div
           class="flex pb-6 mt-4 border-b gap-x-6 md:flex-row-reverse md:w-auto log-in-sign-up md:mt-8 md:me-8 border-b-stone-300 md:border-none"
         >
-          <button class="footer-text">Log In</button>
-          <button class="footer-text">Sign Up</button>
+          <button type="button" class="footer-text">Log In</button>
+          <button type="button" class="footer-text">Sign Up</button>
         </div>
 
         <div class="mt-6 contact-container md:hidden">
@@ -492,7 +492,12 @@
           <h4 class="md:hidden">© 2024 Wizardshot – All rights reserved.</h4>
         </div>
       </div>
+
+      <div class="hidden md:flex md:order-last md:w-full md:justify-center">
+        <h4 class="pb-8">© 2024 Wizardshot – All rights reserved.</h4>
+      </div>
     </footer>
+
     <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/9e6b5903a6.js"
