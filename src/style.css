@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,8 @@
   text-decoration: none;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -31,7 +33,7 @@ body, html {
 }
 
 .font-inter {
-font-family: "Inter", sans-serif; 
+  font-family: "Inter", sans-serif;
 }
 
 .font-alphabetized {
@@ -45,7 +47,7 @@ font-family: "Inter", sans-serif;
 :root {
   --text-primary-color: #4f4f4f;
   --text-navy: #1e293b;
-  --text-secondary-color: #000000;
+  --text-secondary-color: #000;
   --text-title-color: #18181b;
   --text-normal: #0f172a;
   --text-white: #f9fafb;
@@ -79,29 +81,28 @@ font-family: "Inter", sans-serif;
   }
 
   .question-box {
-    @apply border-b border-b-stone-300 pb-2 pt-4  w-[90%] mx-auto
+    @apply border-b border-b-stone-300 pb-2 pt-4  w-[90%] mx-auto;
   }
 
   .question-box-header {
-    @apply flex items-center justify-between mb-4
+    @apply flex items-center justify-between mb-4;
   }
 
   .footer-text {
-    @apply font-mulish font-[700] text-[22px]
+    @apply font-mulish font-[700] text-[22px];
   }
 
   .contact-container p {
-    @apply font-mulish font-[500] text-[14px] text-center
+    @apply font-mulish font-[500] text-[14px] text-center;
   }
 
   .contact-container h4 {
-    @apply font-inter text-[16px] text-center mt-6 pb-6 text-[#98A2B3]
+    @apply font-inter text-[16px] text-center mt-6 pb-6 text-[#98A2B3];
   }
 
   .free-tutorial-text {
-    @apply font-semibold text-gray right-0 text-[18px] font-alphabetized
+    @apply font-semibold text-gray right-0 text-[18px] font-alphabetized;
   }
-  
 }
 
 .border-box {
@@ -111,6 +112,31 @@ font-family: "Inter", sans-serif;
   border-radius: 1rem;
 }
 
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  border: 2px solid black;
+  width: 21px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 1px) rotate(-45deg);
+}
+
+.change .bar2 { opacity: 0; }
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
 .card-gradient-shadow::before {
   content: "";
   position: absolute;
@@ -118,13 +144,15 @@ font-family: "Inter", sans-serif;
   transform: translate(2px, 5px);
   z-index: -1;
   filter: blur(10px);
-  background-image: linear-gradient(to right,
-    #44ff9a,
-    #44b0ff,
-    #8b44ff,
-    #ff6644,
-    #ebff71
-);
+  background-image:
+    linear-gradient(
+      to right,
+      #44ff9a,
+      #44b0ff,
+      #8b44ff,
+      #f64,
+      #ebff71
+    );
 }
 
 .border-box::before {
@@ -144,41 +172,43 @@ font-family: "Inter", sans-serif;
 
 .tutorial-text h3 {
   font-size: 21px;
-  color: #18181B;
+  color: #18181b;
   opacity: 80%;
   font-weight: 500;
-  border-bottom: 1px solid #18181B;
+  border-bottom: 1px solid #18181b;
 }
 
 .bg-gradient::before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%); /* Move the gradient to the left by half of its width */
-    width: 95%;
-    height: 40%;
-    opacity: 50;
-    z-index: -1;
-    background-image: linear-gradient(to right,
-    #f0fbb9,
-    #fbb3a0,
-    #bfa2fd,
-    #a4d0fc,
-    #9fe9e2,
-    #9fface
-  );
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%); /* Move the gradient to the left by half of its width */
+  width: 95%;
+  height: 40%;
+  opacity: 50;
+  z-index: -1;
+  background-image:
+    linear-gradient(
+      to right,
+      #f0fbb9,
+      #fbb3a0,
+      #bfa2fd,
+      #a4d0fc,
+      #9fe9e2,
+      #9fface
+    );
 }
 
 .question-box h2 {
-    font-family: "Inter", sans-serif; 
-    font-size: 16px;
-    font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .question-box p {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
 
 .tutorial-create-box {
