@@ -59,7 +59,7 @@ This project is the code test for the intern program. This is a real-world examp
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://htetwaiyan7191.github.io/capstone-project/)
+- [Live Demo Link](https://htetwaiyan7191.github.io/intern-test/src/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
