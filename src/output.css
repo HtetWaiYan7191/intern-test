@@ -758,6 +758,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -854,8 +859,16 @@ video {
   width: auto;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .flex-1{
   flex: 1 1 0%;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-col{
@@ -991,11 +1004,6 @@ video {
   padding: 0.75rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1016,9 +1024,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-8{
@@ -1375,6 +1383,11 @@ html {
     margin-right: auto;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -1446,6 +1459,10 @@ html {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[70\%\]{
+    width: 70%;
   }
 
   .md\:max-w-\[524px\]{
@@ -1530,12 +1547,13 @@ html {
          column-gap: 2rem;
   }
 
-  .md\:border-b-0{
-    border-bottom-width: 0px;
-  }
-
   .md\:border-none{
     border-style: none;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:px-16{
@@ -1546,6 +1564,11 @@ html {
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-3xl{
